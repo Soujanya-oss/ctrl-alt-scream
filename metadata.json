@@ -1,0 +1,6 @@
+{
+  "name": "The Possession Simulator - Halloween Prank & Chaos OS",
+  "description": "A playful, non-malicious Halloween prank OS where your computer gets hilariously haunted. Features curse toggles, eerie synth audio, screaming pumpkin panic reset, ghost exorcism arcade game, and an AI Spirit Oracle.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

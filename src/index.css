@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-creepster {
+    font-family: 'Creepster', cursive, sans-serif;
+  }
+  .font-mono-retro {
+    font-family: 'VT323', 'Fira Code', monospace;
+  }
+  .font-sans-clean {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom Haunted Keyframes & Effects */
+@keyframes ghostFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-12px) rotate(-3deg);
+  }
+  75% {
+    transform: translateY(8px) rotate(4deg);
+  }
+}
+
+@keyframes poltergeistJitter {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  20% { transform: translate(-3px, 2px) rotate(-1deg); }
+  40% { transform: translate(3px, -2px) rotate(1.5deg); }
+  60% { transform: translate(-2px, -3px) rotate(-0.5deg); }
+  80% { transform: translate(3px, 3px) rotate(1deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes meltDrip {
+  0% {
+    filter: drop-shadow(0 2px 4px rgba(34, 197, 94, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 15px 12px rgba(34, 197, 94, 0.8)) hue-rotate(45deg);
+    transform: scaleY(1.04) translateY(2px);
+  }
+  100% {
+    filter: drop-shadow(0 2px 4px rgba(34, 197, 94, 0.4));
+  }
+}
+
+@keyframes pumpkinPulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(249, 115, 22, 0.4), inset 0 0 15px rgba(234, 88, 12, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(249, 115, 22, 0.8), 0 0 60px rgba(234, 88, 12, 0.5), inset 0 0 25px rgba(249, 115, 22, 0.6);
+  }
+}
+
+@keyframes crtFlicker {
+  0% { opacity: 0.98; }
+  50% { opacity: 0.95; }
+  52% { opacity: 0.99; }
+  85% { opacity: 0.94; }
+  100% { opacity: 0.98; }
+}
+
+.animate-ghost-float {
+  animation: ghostFloat 4s ease-in-out infinite;
+}
+
+.animate-poltergeist {
+  animation: poltergeistJitter 0.25s infinite ease-in-out;
+}
+
+.animate-melt {
+  animation: meltDrip 3s ease-in-out infinite;
+}
+
+.animate-pumpkin-pulse {
+  animation: pumpkinPulse 2s infinite ease-in-out;
+}
+
+/* CRT Scanlines Overlay */
+.crt-overlay::before {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  z-index: 9998;
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+  animation: crtFlicker 0.15s infinite;
+}
+
+/* Custom Retro Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #18181b;
+  border: 1px solid #27272a;
+}
+::-webkit-scrollbar-thumb {
+  background: #f97316;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ea580c;
+}
