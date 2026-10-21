@@ -15,11 +15,11 @@ ctrl-alt-scream is a spooky, retro-inspired interactive Halloween desktop simula
                   
 
 4. Key Features:
-- Curse Control Center: Toggle paranormal    phenomena and custom desktop curses on     demand. 
-- Halloween Arcade & Candy Shop: Play mini   games like Whack-a-Ghost to earn treats    and candy. 
-- Grimbyte AI Spirit Oracle: Gemini-.        powered AI prank advisor and spooky        fortune-teller. 
-- Stealth Prank Deployment: Deploy decoy     screens and countdown timers to prank      friends.
-- Crypt Soundboard: Procedural Halloween     audio FX and synthesizer soundscapes.
+- Curse Control Center: Toggle paranormal  phenomena and custom desktop curses on     demand. 
+- Halloween Arcade & Candy Shop: Play mini games like Whack-a-Ghost to earn treats    and candy. 
+- Grimbyte AI Spirit Oracle: Gemini-.      powered AI prank advisor and spooky fortune-teller. 
+- Stealth Prank Deployment: Deploy decoy   screens and countdown timers to prank      friends.
+- Crypt Soundboard: Procedural Halloween   audio FX and synthesizer soundscapes.
   
 
 5. How to Run / Test the App:
