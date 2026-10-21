@@ -23,8 +23,8 @@ ctrl-alt-scream is a spooky, retro-inspired interactive Halloween desktop simula
   
 
 5. How to Run / Test the App:
-1. Open the deployed app using the project link.
-2. Wait for the homepage to load.
-3. Enter any search query in the search bar.
-4. Click the search button and explore the spooky results.
-5. Try different searches and interact with the app to discover hidden surprises.
+- Open the deployed app using the       project link.
+- Wait for the homepage to load.
+- Enter any search query in the search bar.
+- Click the search button and explore the spooky results.
+- Try different searches and interact with the app to discover hidden surprises.
